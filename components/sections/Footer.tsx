@@ -14,83 +14,11 @@ export function Footer() {
               ባሏን ትፍራ።"
             </p>
           </div>
-
-          <div>
-            <h4 className="text-primary text-sm uppercase tracking-wide font-bold mb-4">
-              Event
-            </h4>
-            <ul className="space-y-2 text-foreground/70 font-lora text-sm">
-              <li>
-                <a href="#" className="hover:text-primary transition-colors">
-                  June 15th, 2024
-                </a>
-              </li>
-              <li>
-                <a href="#" className="hover:text-primary transition-colors">
-                  The Elegant Hotel
-                </a>
-              </li>
-              <li>
-                <a href="#" className="hover:text-primary transition-colors">
-                  New York, NY
-                </a>
-              </li>
-            </ul>
-          </div>
-
-          <div>
-            <h4 className="text-primary text-sm uppercase tracking-wide font-bold mb-4">
-              Connect
-            </h4>
-            <ul className="space-y-2 text-foreground/70 font-lora text-sm">
-              <li>
-                <a
-                  href="mailto:hello@saramichael.com"
-                  className="hover:text-primary transition-colors"
-                >
-                  Email
-                </a>
-              </li>
-              <li>
-                <a href="#" className="hover:text-primary transition-colors">
-                  Instagram
-                </a>
-              </li>
-              <li>
-                <a href="#" className="hover:text-primary transition-colors">
-                  Website
-                </a>
-              </li>
-            </ul>
-          </div>
-
-          <div>
-            <h4 className="text-primary text-sm uppercase tracking-wide font-bold mb-4">
-              Links
-            </h4>
-            <ul className="space-y-2 text-foreground/70 font-lora text-sm">
-              <li>
-                <a href="#" className="hover:text-primary transition-colors">
-                  Guest List
-                </a>
-              </li>
-              <li>
-                <a href="#" className="hover:text-primary transition-colors">
-                  Travel Guide
-                </a>
-              </li>
-              <li>
-                <a href="#" className="hover:text-primary transition-colors">
-                  Registry
-                </a>
-              </li>
-            </ul>
-          </div>
         </div>
 
         <div className="border-t border-primary/20 pt-8 flex flex-col md:flex-row justify-between items-center">
           <p className="text-foreground/50 font-lora text-sm">
-            © 2024 አለማየሁ ብርሃኑ እና መሰረት ዳኜ. All rights reserved.
+            © 2018 አለማየሁ ብርሃኑ እና መሰረት ዳኜ. All rights reserved.
           </p>
           <p className="text-foreground/50 font-lora text-sm mt-4 md:mt-0">
             ስለመጡ አናመሰግናለን
