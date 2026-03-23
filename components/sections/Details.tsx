@@ -3,22 +3,22 @@
 export function Details() {
   const events = [
     {
-      title: "Ceremony",
-      time: "4:00 PM",
-      location: "Grand Ballroom, The Elegant Hotel",
-      address: "123 Wedding Lane, New York, NY 10001",
+      title: "ፕሮግራም መጀመርያ",
+      time: "10:00 PM",
+      location: "ሰንዳፋ",
+      address: "በመኖርያ ቤት",
     },
     {
-      title: "Cocktail Hour",
-      time: "5:30 PM",
-      location: "Rooftop Garden",
-      address: "Same venue",
+      title: "የምሳ ግብዣ ስነስርዐት",
+      time: "1:00 PM",
+      location: "ሰንዳፋ",
+      address: "በመኖርያ ቤት",
     },
     {
-      title: "Reception & Dinner",
-      time: "7:00 PM",
-      location: "Grand Ballroom",
-      address: "Same venue",
+      title: "የፎቶ መነሳትና የስጦታ ስነስርአት",
+      time: "8:30 PM",
+      location: "ሰንዳፋ",
+      address: "በመኖርያ ቤት",
     },
   ];
 
@@ -27,13 +27,13 @@ export function Details() {
       <div className="max-w-6xl mx-auto px-6">
         <div className="text-center mb-16">
           <p className="text-primary text-sm tracking-widest uppercase font-lora">
-            Event Details
+            ዕለታዊ የመርሃግብር ዝርዝር
           </p>
           <h2 className="text-4xl md:text-5xl font-playfair font-bold text-foreground mt-4">
-            The Wedding Day
+            የጋብቻው ቀን
           </h2>
           <p className="text-foreground/60 text-lg font-lora mt-4">
-            Saturday, June 15th, 2024
+            እሁድ ፣ ሚያዝያ 25, 2018
           </p>
         </div>
 
@@ -49,7 +49,7 @@ export function Details() {
               <div className="space-y-3">
                 <div>
                   <p className="text-primary text-sm uppercase tracking-wide">
-                    Time
+                    ሰዐት
                   </p>
                   <p className="text-foreground text-lg font-lora">
                     {event.time}
@@ -57,7 +57,7 @@ export function Details() {
                 </div>
                 <div>
                   <p className="text-primary text-sm uppercase tracking-wide">
-                    Location
+                    አድራሻ
                   </p>
                   <p className="text-foreground text-lg font-lora">
                     {event.location}
@@ -65,7 +65,7 @@ export function Details() {
                 </div>
                 <div>
                   <p className="text-primary text-sm uppercase tracking-wide">
-                    Address
+                    ዝግጅቱ የሚከናወንበት ቦታ
                   </p>
                   <p className="text-foreground/70 text-sm font-lora">
                     {event.address}
@@ -75,12 +75,6 @@ export function Details() {
             </div>
           ))}
         </div>
-
-        {/* <div className="mt-16 p-8 bg-background rounded-lg border border-primary/30 text-center">
-          <h3 className="text-2xl font-playfair font-bold text-foreground mb-4">Dress Code</h3>
-          <p className="text-foreground/70 text-lg font-lora">Black Tie</p>
-          <p className="text-primary text-sm uppercase tracking-wide mt-6">Formal evening attire</p>
-        </div> */}
       </div>
     </section>
   );

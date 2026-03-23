@@ -24,7 +24,7 @@ export function Story() {
             </p>
 
             <h2 className="text-4xl md:text-5xl font-playfair font-bold text-foreground">
-              ትውውቃችን
+              ትውውቅ
             </h2>
 
             <p className="text-foreground/70 text-lg font-lora leading-relaxed">
@@ -43,7 +43,8 @@ export function Story() {
 
             <div className="pt-6">
               <p className="text-primary font-playfair text-2xl italic">
-                A match made in coffee aisle
+                ስለዚህ ሰው አባቱንና እናቱን ይተዋል፥ በሚስቱም ይጣበቃል፤ ሁለቱም አንድ ሥጋ ይሆናሉ ዘፍጥረት
+                2፥24
               </p>
             </div>
           </div>
