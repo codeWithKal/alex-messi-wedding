@@ -28,17 +28,15 @@ export function Story() {
             </h2>
 
             <p className="text-foreground/70 text-lg font-lora leading-relaxed">
-              We met on a rainy evening in the coffee shop around the corner
-              from where we both lived. Michael spilled his coffee all over
-              Sarah's favorite book, and what started as an awkward apology
-              turned into hours of conversation about literature, dreams, and
-              life.
-            </p>
-
-            <p className="text-foreground/70 text-lg font-lora leading-relaxed">
-              Three years later, Michael surprised Sarah with a ring at the same
-              coffee shop. We've been inseparable ever since, and now we're
-              thrilled to share our joy with all of you.
+              ገና በለጋ እድሜያችን ነበር በአንዲት የተቀደሰች እለተ እሁድ ቀን፣  የሰንበት ት/ቤት አዳራሽ ውስጥ
+              የተያየነው የእግዚያብሔር ስራ ድንቅ ኣይደል፧ እንደተያየንም አልቀረም ብዙ የህይወት ውጣ ውረዶችን
+              አሳለፍን ትንሽ የማይባሉ ኣስተማሪ ፈተናዎችን መካክል በፍቅራችን ጸናን እናም የእግዚያብሔር ቸርነት
+              ታክሎበት ለዚህች የተቀደሰች ቀን አደረሰን።
+              <p className="text-foreground/70 text-lg font-lora leading-relaxed">
+                በፈተናዎች መካከል እንድንጸና ከጎናችን ሆናችሁ ስታግዙን ለነበራችሁ ይህችን ውብ ቀን ከኛው እኩል
+                ለማየት የጓጓችሁ በሙሉ እግዚያብሄር ረድቶን ለዚህ ደርሰናልና እኛን ደስ ብሎናል እናንተንም የደስታችን
+                ተካፍይ ትሆኑ ዘንድ ጋብዘናችኋል
+              </p>
             </p>
 
             <div className="pt-6">

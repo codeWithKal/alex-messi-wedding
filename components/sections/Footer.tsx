@@ -18,7 +18,7 @@ export function Footer() {
 
         <div className="border-t border-primary/20 pt-8 flex flex-col md:flex-row justify-between items-center">
           <p className="text-foreground/50 font-lora text-sm">
-            © 2018 አለማየሁ ብርሃኑ እና መሰረት ዳኜ. All rights reserved.
+            © 2018 አለማየሁ ብርሃኑ እና መሰረት ዳኜ. ሁሉም የቅጂ መብቶች እንደተጠበቁ ናቸው.
           </p>
           <p className="text-foreground/50 font-lora text-sm mt-4 md:mt-0">
             ስለመጡ አናመሰግናለን

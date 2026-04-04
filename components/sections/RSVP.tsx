@@ -5,11 +5,6 @@ import { useState } from "react";
 export function RSVP() {
   const [formData, setFormData] = useState({
     name: "",
-    email: "",
-    phone: "",
-    attending: "yes",
-    guests: "1",
-    dietary: "",
     message: "",
   });
 
@@ -27,17 +22,30 @@ export function RSVP() {
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     // In a real application, you would send this to your backend
-    console.log("Form submitted:", formData);
-    setSubmitted(true);
-    setFormData({
-      name: "",
-      email: "",
-      phone: "",
-      attending: "yes",
-      guests: "1",
-      dietary: "",
-      message: "",
-    });
+    const formPayload = new FormData();
+    formPayload.append("name", formData.name);
+    formPayload.append("message", formData.message);
+
+    fetch("https://formspree.io/f/xqegyror", {
+      method: "POST",
+      body: formPayload,
+      headers: {
+        Accept: "application/json",
+      },
+    })
+      .then((response) => {
+        if (!response.ok) {
+          throw new Error("Form submission failed");
+        }
+        return response.json();
+      })
+      .then(() => {
+        setSubmitted(true);
+        setFormData({ name: "", message: "" });
+      })
+      .catch((error) => {
+        console.error(error);
+      });
   };
 
   return (
@@ -117,7 +125,7 @@ export function RSVP() {
             </h3>
             <div className="aspect-video">
               <iframe
-                src="https://maps.google.com/maps?q=Sendafa,Ethiopia&output=embed"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12738.667168860778!2d39.14207418002557!3d9.197236735924998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x164bc600b973fc4b%3A0xebb7ee496042f241!2sAleltu!5e1!3m2!1sen!2set!4v1775303822370!5m2!1sen!2set"
                 width="100%"
                 height="100%"
                 style={{ border: 0 }}
