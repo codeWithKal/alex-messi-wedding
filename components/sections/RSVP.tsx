@@ -121,7 +121,7 @@ export function RSVP() {
 
           <div className="bg-secondary p-8 rounded-lg">
             <h3 className="text-xl font-playfair font-bold text-foreground mb-4">
-              አድራሻ: ሰንዳፋ
+              አድራሻ: አሌልቱ
             </h3>
             <div className="aspect-video">
               <iframe
