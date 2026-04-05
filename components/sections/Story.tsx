@@ -19,23 +19,12 @@ export function Story() {
 
           {/* Content */}
           <div className="space-y-6">
-            <p className="text-primary text-sm tracking-widest uppercase font-lora">
-              ታሪካችን
-            </p>
-
-            <h2 className="text-4xl md:text-5xl font-playfair font-bold text-foreground">
-              ትውውቅ
-            </h2>
-
             <p className="text-foreground/70 text-lg font-lora leading-relaxed">
-              ገና በለጋ እድሜያችን ነበር በአንዲት የተቀደሰች እለተ እሁድ ቀን፣  የሰንበት ት/ቤት አዳራሽ ውስጥ
-              የተያየነው የእግዚያብሔር ስራ ድንቅ ኣይደል፧ እንደተያየንም አልቀረም ብዙ የህይወት ውጣ ውረዶችን
-              አሳለፍን ትንሽ የማይባሉ ኣስተማሪ ፈተናዎችን መካክል በፍቅራችን ጸናን እናም የእግዚያብሔር ቸርነት
-              ታክሎበት ለዚህች የተቀደሰች ቀን አደረሰን።
+              ለውድ ቤተሰቦቻችን እና ጓኞቻችን "እግዚያብሄር የሰራት ቀን ይህቺ ናት:ሐሴትን እናድርግ:በዕርስዋም ደስ
+              ይበለን" መዝ 118:24
               <p className="text-foreground/70 text-lg font-lora leading-relaxed">
-                በፈተናዎች መካከል እንድንጸና ከጎናችን ሆናችሁ ስታግዙን ለነበራችሁ ይህችን ውብ ቀን ከኛው እኩል
-                ለማየት የጓጓችሁ በሙሉ እግዚያብሄር ረድቶን ለዚህ ደርሰናልና እኛን ደስ ብሎናል እናንተንም የደስታችን
-                ተካፍይ ትሆኑ ዘንድ ጋብዘናችኋል
+                የማክበር ሰላምታችንን እያቀረብን እሁድ ሚያዚያ 25/2018 ዓ.ም በሚደረገው የጋብቻ ስነ-ስርዓታችን
+                ላይ እንዲገኙልን ስንል ባክብሮት ጋብዘንዎታል:: የደስታችን ተካፋይ ስለሆኑ እናመሰግናለን::
               </p>
             </p>
 
