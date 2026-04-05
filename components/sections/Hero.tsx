@@ -1,40 +1,8 @@
 "use client";
 
-import { useEffect, useState } from "react";
 import Image from "next/image";
 
 export function Hero() {
-  const [timeLeft, setTimeLeft] = useState({
-    days: 0,
-    hours: 0,
-    minutes: 0,
-    seconds: 0,
-  });
-
-  useEffect(() => {
-    const targetDate = new Date("2026-05-03T00:00:00");
-
-    const updateCountdown = () => {
-      const now = new Date();
-      const diff = targetDate.getTime() - now.getTime();
-
-      if (diff <= 0) {
-        setTimeLeft({ days: 0, hours: 0, minutes: 0, seconds: 0 });
-        return;
-      }
-
-      const days = Math.floor(diff / (1000 * 60 * 60 * 24));
-      const hours = Math.floor((diff / (1000 * 60 * 60)) % 24);
-      const minutes = Math.floor((diff / (1000 * 60)) % 60);
-      const seconds = Math.floor((diff / 1000) % 60);
-
-      setTimeLeft({ days, hours, minutes, seconds });
-    };
-
-    updateCountdown();
-    const timer = window.setInterval(updateCountdown, 1000);
-    return () => window.clearInterval(timer);
-  }, []);
   return (
     <section className="relative h-screen flex items-center justify-center overflow-hidden bg-background">
       {/* Background Image */}
@@ -64,27 +32,6 @@ export function Hero() {
 
             <div className="absolute top-0 left-4 w-8 h-8 rounded-full border-2 border-yellow-500"></div>
           </div>
-        </div>
-
-        <div className="mt-10 grid grid-cols-2 md:grid-cols-4 gap-4 text-center">
-          {[
-            { label: "ቀናት", value: timeLeft.days },
-            { label: "ሰዓታት", value: timeLeft.hours },
-            { label: "ደቂቃዎች", value: timeLeft.minutes },
-            { label: "ሴኮንዶች", value: timeLeft.seconds },
-          ].map((item) => (
-            <div
-              key={item.label}
-              className="rounded-3xl bg-white/10 p-5 backdrop-blur-sm border border-white/10"
-            >
-              <p className="text-5xl md:text-6xl font-playfair font-bold text-foreground leading-none">
-                {String(item.value).padStart(2, "0")}
-              </p>
-              <span className="text-sm uppercase tracking-[0.3em] text-foreground/60 mt-2 block">
-                {item.label}
-              </span>
-            </div>
-          ))}
         </div>
 
         <p className="text-xl md:text-2xl text-foreground/80 font-lora italic">

@@ -1,4 +1,5 @@
 import { Hero } from "@/components/sections/Hero";
+import { Countdown } from "@/components/sections/Countdown";
 import { Story } from "@/components/sections/Story";
 import { Details } from "@/components/sections/Details";
 import { Gallery } from "@/components/sections/Gallery";
@@ -10,6 +11,7 @@ export default function Home() {
   return (
     <main className="bg-background">
       <Hero />
+      <Countdown />
       <Story />
       <Details />
       <Gallery />
