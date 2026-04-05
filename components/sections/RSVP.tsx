@@ -26,7 +26,7 @@ export function RSVP() {
     formPayload.append("name", formData.name);
     formPayload.append("message", formData.message);
 
-    fetch("https://formspree.io/f/xqegyror", {
+    fetch("https://formspree.io/f/mykbblgw", {
       method: "POST",
       body: formPayload,
       headers: {
